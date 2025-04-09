@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Files - CloudLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>CloudLink</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="file-share.html" class="active">Share Files</a></li>
+          <li><a href="text-share.html">Share Text</a></li>
+          <li><a href="retrieve.html">Retrieve</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Share Files</h2>
+      <p>Upload and share files with CloudLink securely.</p>
+      <input type="file" id="file-input" />
+      <button id="upload-button" class="button">Upload and Share</button>
+
+      <div id="share-link" class="share-link" style="display:none">
+        <input type="text" id="file-share-link-input" readonly>
+        <button id="copy-file-button" class="button">Copy</button>
+        <button id="qr-file-button" class="button">QR Code</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 CloudLink. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="file-share.js"></script>
+</body>
+</html>
